@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #1e1e1e; /* Dark background color */
+            color: #fff; /* Text color */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 500px;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            background: #333; /* Dark container background color */
+        }
+
+        .form-container {
+            margin-top: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 2px solid #4CAF50; /* Green border */
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to Sentiment Analysis</h2>
+        <form class="form-container" action="/analyze" method="post">
+            <label for="review">Enter your review:</label><br>
+            <input type="text" id="review" name="review" placeholder="Type your review here..." required><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
